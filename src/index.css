@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  html {
+    margin: 0;
+    min-height: 100%;
+    height: 100%;
+  }
+  body {
+    margin: 0;
+    min-height: 100%;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+      "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+      "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @apply bg-gray-50 dark:bg-gray-800 !important;
+  }
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",  monospace;
+  }
+  * {
+    @apply text-gray-900 dark:text-gray-50;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-bold my-3
+  }
+
+  h1 {
+    @apply text-4xl
+  }
+
+  h2 {
+    @apply text-3xl
+  }
+
+  .radio-label {
+    @apply inline-flex items-center space-x-2
+  }
+
+  input[type="radio"]{
+    @apply checked:bg-purple-600 dark:checked:bg-purple-600 focus:bg-purple-600 hover:bg-purple-600;
+  }
+
+  input[type="text"], input[type="password"]{
+    @apply rounded px-2 py-3 w-full border-2 focus:border-purple-600 text-gray-700 text-sm font-normal !important;
+  }
+
+  button{
+    @apply px-4 py-2 font-bold text-white bg-purple-500 border-2 border-purple-900 rounded !important;
+  }
+
+   
+}
